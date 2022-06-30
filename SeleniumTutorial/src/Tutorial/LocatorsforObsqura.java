@@ -28,7 +28,7 @@ public class LocatorsforObsqura {
 		//HARD ASSERT
 	    Assert.assertEquals(actual,exp);//actual  //expected
 	    System.out.println("The Assertion Passed");
-		
+		//for my second commit
 		
 		
 		  driver.findElement(By.linkText("Checkbox Demo")).click(); Thread.sleep(3000);

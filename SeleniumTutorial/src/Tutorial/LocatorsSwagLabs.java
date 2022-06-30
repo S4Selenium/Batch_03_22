@@ -25,6 +25,8 @@ public class LocatorsSwagLabs {
 		//driver.findElement(By.tagName("img")).click();
 		driver.findElement(By.xpath("(//img)[3]")).click();
 		Thread.sleep(3000);
+		//for my second commit
+		
 		
 
 	}
