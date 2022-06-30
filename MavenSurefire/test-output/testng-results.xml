@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="12" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-27T21:24:27 IST" name="Regression" finished-at="2022-06-27T21:24:27 IST" duration-ms="75">
+    <groups>
+      <group name="Reg">
+        <method signature="DogInsuranceTest.WebLogin()[pri:0, instance:Insurance.DogInsuranceTest@294425a7]" name="WebLogin" class="Insurance.DogInsuranceTest"/>
+        <method signature="DogInsuranceTest.WebLogout()[pri:0, instance:Insurance.DogInsuranceTest@294425a7]" name="WebLogout" class="Insurance.DogInsuranceTest"/>
+        <method signature="HomeInsuranceTest.WebLogin()[pri:0, instance:Insurance.HomeInsuranceTest@2a798d51]" name="WebLogin" class="Insurance.HomeInsuranceTest"/>
+        <method signature="HomeInsuranceTest.WebLogout()[pri:0, instance:Insurance.HomeInsuranceTest@2a798d51]" name="WebLogout" class="Insurance.HomeInsuranceTest"/>
+        <method signature="VehicleInsuranceTest.WebLogout()[pri:0, instance:Insurance.VehicleInsuranceTest@6d763516]" name="WebLogout" class="Insurance.VehicleInsuranceTest"/>
+        <method signature="VehicleInsuranceTest.WebLogin()[pri:1, instance:Insurance.VehicleInsuranceTest@6d763516]" name="WebLogin" class="Insurance.VehicleInsuranceTest"/>
+      </group> <!-- Reg -->
+    </groups>
+    <test started-at="2022-06-27T21:24:27 IST" name="Test" finished-at="2022-06-27T21:24:27 IST" duration-ms="75">
+      <class name="Insurance.HomeInsuranceTest">
+        <test-method signature="WebLogin()[pri:0, instance:Insurance.HomeInsuranceTest@2a798d51]" started-at="2022-06-27T21:24:27 IST" name="WebLogin" finished-at="2022-06-27T21:24:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+        <test-method signature="WebLogout()[pri:0, instance:Insurance.HomeInsuranceTest@2a798d51]" started-at="2022-06-27T21:24:27 IST" name="WebLogout" finished-at="2022-06-27T21:24:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogout -->
+      </class> <!-- Insurance.HomeInsuranceTest -->
+      <class name="Insurance.VehicleInsuranceTest">
+        <test-method signature="WebLogout()[pri:0, instance:Insurance.VehicleInsuranceTest@6d763516]" started-at="2022-06-27T21:24:27 IST" name="WebLogout" finished-at="2022-06-27T21:24:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogout -->
+        <test-method signature="WebLogin()[pri:1, instance:Insurance.VehicleInsuranceTest@6d763516]" started-at="2022-06-27T21:24:27 IST" name="WebLogin" finished-at="2022-06-27T21:24:27 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+      </class> <!-- Insurance.VehicleInsuranceTest -->
+      <class name="Insurance.DogInsuranceTest">
+        <test-method signature="WebLogin()[pri:0, instance:Insurance.DogInsuranceTest@294425a7]" started-at="2022-06-27T21:24:27 IST" name="WebLogin" finished-at="2022-06-27T21:24:27 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+        <test-method signature="WebLogout()[pri:0, instance:Insurance.DogInsuranceTest@294425a7]" started-at="2022-06-27T21:24:27 IST" name="WebLogout" finished-at="2022-06-27T21:24:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogout -->
+      </class> <!-- Insurance.DogInsuranceTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Regression -->
+</testng-results>
