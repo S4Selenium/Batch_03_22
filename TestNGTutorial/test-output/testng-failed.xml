@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Reg"/>
-      </run>
-    </groups>
+<suite parallel="tests" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
     <classes>
+      <class name="Tutorial.ParameterInTestNG">
+        <methods>
+          <include name="pgm"/>
+        </methods>
+      </class> <!-- Tutorial.ParameterInTestNG -->
+      <class name="Tutorial.TestNGDP">
+        <methods>
+          <include name="SwagLagsLogin" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- Tutorial.TestNGDP -->
       <class name="Tutorial.DogInsurance">
         <methods>
-          <include name="WebLogin"/>
+          <include name="BeforesuiteMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterclassMethod"/>
+          <include name="DBReset"/>
+          <include name="BeforeclassMethod"/>
+          <include name="AftersuiteMethod"/>
+          <include name="BMethod"/>
+          <include name="MobileLogout"/>
+          <include name="ReportGeneration"/>
         </methods>
       </class> <!-- Tutorial.DogInsurance -->
     </classes>

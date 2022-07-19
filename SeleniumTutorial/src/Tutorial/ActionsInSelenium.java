@@ -25,6 +25,7 @@ public class ActionsInSelenium {
         .moveToElement(driver.findElement(By.id("menu_admin_viewSystemUsers"))).click().perform();
         Thread.sleep(2000);
         
+        
 	}
 
 }

@@ -1,45 +1,433 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="15" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="12" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-24T21:22:01 IST" name="Regression" finished-at="2022-06-24T21:22:01 IST" duration-ms="75">
+  <suite started-at="2022-07-05T21:54:14 IST" name="Regression" finished-at="2022-07-05T21:54:20 IST" duration-ms="6474">
     <groups>
+      <group name="SMK">
+        <method signature="DogInsurance.MobileLogin()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" name="MobileLogin" class="Tutorial.DogInsurance"/>
+        <method signature="DogInsurance.MobileLogout()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" name="MobileLogout" class="Tutorial.DogInsurance"/>
+      </group> <!-- SMK -->
       <group name="Reg">
-        <method signature="DogInsurance.WebLogin()[pri:0, instance:Tutorial.DogInsurance@7e07db1f]" name="WebLogin" class="Tutorial.DogInsurance"/>
-        <method signature="DogInsurance.WebLogout()[pri:0, instance:Tutorial.DogInsurance@7e07db1f]" name="WebLogout" class="Tutorial.DogInsurance"/>
-        <method signature="HomeInsurance.WebLogin()[pri:0, instance:Tutorial.HomeInsurance@74fe5c40]" name="WebLogin" class="Tutorial.HomeInsurance"/>
-        <method signature="HomeInsurance.WebLogout()[pri:0, instance:Tutorial.HomeInsurance@74fe5c40]" name="WebLogout" class="Tutorial.HomeInsurance"/>
-        <method signature="VehicleInsurance.WebLogout()[pri:0, instance:Tutorial.VehicleInsurance@158d2680]" name="WebLogout" class="Tutorial.VehicleInsurance"/>
-        <method signature="VehicleInsurance.WebLogin()[pri:1, instance:Tutorial.VehicleInsurance@158d2680]" name="WebLogin" class="Tutorial.VehicleInsurance"/>
+        <method signature="DogInsurance.WebLogin()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" name="WebLogin" class="Tutorial.DogInsurance"/>
+        <method signature="DogInsurance.WebLogout()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" name="WebLogout" class="Tutorial.DogInsurance"/>
+        <method signature="HomeInsurance.WebLogin()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" name="WebLogin" class="Tutorial.HomeInsurance"/>
+        <method signature="HomeInsurance.WebLogout()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" name="WebLogout" class="Tutorial.HomeInsurance"/>
+        <method signature="VehicleInsurance.WebLogout()[pri:0, instance:Tutorial.VehicleInsurance@74f0ea28]" name="WebLogout" class="Tutorial.VehicleInsurance"/>
+        <method signature="VehicleInsurance.WebLogin()[pri:1, instance:Tutorial.VehicleInsurance@74f0ea28]" name="WebLogin" class="Tutorial.VehicleInsurance"/>
       </group> <!-- Reg -->
     </groups>
-    <test started-at="2022-06-24T21:22:01 IST" name="Test" finished-at="2022-06-24T21:22:01 IST" duration-ms="75">
+    <test started-at="2022-07-05T21:54:14 IST" name="Test" finished-at="2022-07-05T21:54:20 IST" duration-ms="6474">
+      <class name="Tutorial.ParameterInTestNG">
+        <test-method signature="pgm(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tutorial.ParameterInTestNG@293a5bf6]" started-at="2022-07-05T21:54:20 IST" name="pgm" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Uname' is required by @Test on method pgm but has not been marked @Optional or defined
+in C:\Users\Nithin\eclipse-workspace\Batch_03_22\TestNGTutorial\Regression.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Uname' is required by @Test on method pgm but has not been marked @Optional or defined
+in C:\Users\Nithin\eclipse-workspace\Batch_03_22\TestNGTutorial\Regression.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:660)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pgm -->
+      </class> <!-- Tutorial.ParameterInTestNG -->
       <class name="Tutorial.HomeInsurance">
-        <test-method signature="WebLogin()[pri:0, instance:Tutorial.HomeInsurance@74fe5c40]" started-at="2022-06-24T21:22:01 IST" name="WebLogin" finished-at="2022-06-24T21:22:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="MobileLogin()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" started-at="2022-07-05T21:54:14 IST" name="MobileLogin" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogin -->
+        <test-method signature="MobileLogout()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" started-at="2022-07-05T21:54:14 IST" name="MobileLogout" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogout -->
+        <test-method signature="WebLogin()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" started-at="2022-07-05T21:54:20 IST" name="WebLogin" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogin -->
-        <test-method signature="WebLogout()[pri:0, instance:Tutorial.HomeInsurance@74fe5c40]" started-at="2022-06-24T21:22:01 IST" name="WebLogout" finished-at="2022-06-24T21:22:01 IST" duration-ms="2" status="PASS">
+        <test-method signature="WebLogout()[pri:0, instance:Tutorial.HomeInsurance@42a48628]" started-at="2022-07-05T21:54:20 IST" name="WebLogout" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogout -->
       </class> <!-- Tutorial.HomeInsurance -->
+      <class name="Tutorial.TestNGDP">
+        <test-method signature="SwagLagsLogin(java.lang.String,java.lang.String)[pri:0, instance:Tutorial.TestNGDP@6aeb35e6]" started-at="2022-07-05T21:54:14 IST" name="SwagLagsLogin" data-provider="getlogin" finished-at="2022-07-05T21:54:19 IST" duration-ms="4821" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+at Tutorial.TestNGDP.SwagLagsLogin(TestNGDP.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwagLagsLogin -->
+        <test-method signature="SwagLagsLogin(java.lang.String,java.lang.String)[pri:0, instance:Tutorial.TestNGDP@6aeb35e6]" started-at="2022-07-05T21:54:19 IST" name="SwagLagsLogin" data-provider="getlogin" finished-at="2022-07-05T21:54:19 IST" duration-ms="759" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+at Tutorial.TestNGDP.SwagLagsLogin(TestNGDP.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwagLagsLogin -->
+        <test-method signature="SwagLagsLogin(java.lang.String,java.lang.String)[pri:0, instance:Tutorial.TestNGDP@6aeb35e6]" started-at="2022-07-05T21:54:19 IST" name="SwagLagsLogin" data-provider="getlogin" finished-at="2022-07-05T21:54:20 IST" duration-ms="801" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 103.0.5060.66 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'JARVISLAPTOP', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+at Tutorial.TestNGDP.SwagLagsLogin(TestNGDP.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwagLagsLogin -->
+      </class> <!-- Tutorial.TestNGDP -->
       <class name="Tutorial.DogInsurance">
-        <test-method signature="WebLogin()[pri:0, instance:Tutorial.DogInsurance@7e07db1f]" started-at="2022-06-24T21:22:01 IST" name="WebLogin" finished-at="2022-06-24T21:22:01 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="BeforesuiteMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="BeforesuiteMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforesuiteMethod -->
+        <test-method is-config="true" signature="DBReset()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="DBReset" finished-at="2022-07-05T21:54:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DBReset -->
+        <test-method is-config="true" signature="BeforeclassMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="BeforeclassMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeclassMethod -->
+        <test-method is-config="true" signature="BMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="BMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BMethod -->
+        <test-method signature="MobileLogin()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="MobileLogin" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="afterMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="BMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="BMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BMethod -->
+        <test-method signature="MobileLogout()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="MobileLogout" finished-at="2022-07-05T21:54:14 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at Tutorial.DogInsurance.MobileLogout(DogInsurance.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogout -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:14 IST" name="afterMethod" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="BMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="BMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BMethod -->
+        <test-method signature="WebLogin()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="WebLogin" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogin -->
-        <test-method signature="WebLogout()[pri:0, instance:Tutorial.DogInsurance@7e07db1f]" started-at="2022-06-24T21:22:01 IST" name="WebLogout" finished-at="2022-06-24T21:22:01 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="afterMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="WebLogout()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="WebLogout" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogout -->
+        <test-method is-config="true" signature="BMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="BMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="afterMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclassMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="afterclassMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclassMethod -->
+        <test-method is-config="true" signature="ReportGeneration()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="ReportGeneration" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportGeneration -->
+        <test-method is-config="true" signature="AftersuiteMethod()[pri:0, instance:Tutorial.DogInsurance@2f9f7dcf]" started-at="2022-07-05T21:54:20 IST" name="AftersuiteMethod" finished-at="2022-07-05T21:54:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftersuiteMethod -->
       </class> <!-- Tutorial.DogInsurance -->
+      <class name="Tutorial.TestNgFirstPgm">
+        <test-method signature="firstpgm()[pri:0, instance:Tutorial.TestNgFirstPgm@1283bb96]" started-at="2022-07-05T21:54:20 IST" name="firstpgm" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstpgm -->
+      </class> <!-- Tutorial.TestNgFirstPgm -->
       <class name="Tutorial.VehicleInsurance">
-        <test-method signature="WebLogout()[pri:0, instance:Tutorial.VehicleInsurance@158d2680]" started-at="2022-06-24T21:22:01 IST" name="WebLogout" finished-at="2022-06-24T21:22:01 IST" duration-ms="1" status="PASS">
+        <test-method signature="MobileLogout()[pri:-4, instance:Tutorial.VehicleInsurance@74f0ea28]" started-at="2022-07-05T21:54:14 IST" name="MobileLogout" finished-at="2022-07-05T21:54:14 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogout -->
+        <test-method signature="MobileLogin()[pri:0, instance:Tutorial.VehicleInsurance@74f0ea28]" started-at="2022-07-05T21:54:14 IST" name="MobileLogin" finished-at="2022-07-05T21:54:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogin -->
+        <test-method signature="WebLogout()[pri:0, instance:Tutorial.VehicleInsurance@74f0ea28]" started-at="2022-07-05T21:54:20 IST" name="WebLogout" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogout -->
-        <test-method signature="WebLogin()[pri:1, instance:Tutorial.VehicleInsurance@158d2680]" started-at="2022-06-24T21:22:01 IST" name="WebLogin" finished-at="2022-06-24T21:22:01 IST" duration-ms="1" status="PASS">
+        <test-method signature="WebLogin()[pri:1, instance:Tutorial.VehicleInsurance@74f0ea28]" started-at="2022-07-05T21:54:20 IST" name="WebLogin" finished-at="2022-07-05T21:54:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogin -->

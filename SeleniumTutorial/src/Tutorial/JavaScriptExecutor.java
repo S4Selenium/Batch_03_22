@@ -32,7 +32,7 @@ public class JavaScriptExecutor {
 		JavascriptExecutor jscript =(JavascriptExecutor) driver;
 		WebElement Stay = driver.findElement(By.xpath("//label[@for='persistent']"));
 		WebElement forgot = driver.findElement(By.id("mbr-forgot-link"));
-		jscript.executeScript("arguments[0].click();arguments[1].click();",Stay,forgot);
+		jscript.executeScript("arguments[0].click();",Stay);
 		Thread.sleep(5000);
 		jscript.executeScript("alert('Hello')");
 		Thread.sleep(5000);

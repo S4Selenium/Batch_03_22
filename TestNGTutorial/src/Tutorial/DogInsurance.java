@@ -56,6 +56,7 @@ public class DogInsurance {
 	public void MobileLogout()
 	{
 		System.out.println("Dog Insurance MobileLogout");
+		Assert.assertEquals(false, true);
 	}
 	@AfterMethod
 	public void afterMethod()

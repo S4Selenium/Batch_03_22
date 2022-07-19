@@ -5,7 +5,9 @@
     <classes>
       <class name="TestCases.LoginTest">
         <methods>
-          <include name="createclient"/>
+          <include name="EndGame"/>
+          <include name="firstcall"/>
+          <include name="InvalidLogin" invocation-numbers="0 1"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->
