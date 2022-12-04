@@ -6,8 +6,9 @@
       <class name="TestCases.LoginTest">
         <methods>
           <include name="EndGame"/>
+          <include name="endBrowser"/>
           <include name="firstcall"/>
-          <include name="InvalidLogin" invocation-numbers="0 1"/>
+          <include name="InvalidLogin" invocation-numbers="1"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->

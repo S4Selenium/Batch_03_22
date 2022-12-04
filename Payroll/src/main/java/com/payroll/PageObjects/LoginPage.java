@@ -10,7 +10,7 @@ import com.payroll.Actions.Action;
 public class LoginPage extends BaseClass
 
 {
-	Action act = new Action();
+	
 	public static WebDriver driver;	
 	
 	@FindBy(id = "loginform-username")
@@ -73,6 +73,7 @@ public class LoginPage extends BaseClass
 		   act.type(password,Pwd);
 		   act.click(driver, loginbutton);
 		   return new HomePage(driver);
+		   //act.explicitWait(driver, errormsg, 0);
 	   }
 	   
 	   public String errormsg()

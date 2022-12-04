@@ -1,29 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T21:15:52 IST" name="Suite" finished-at="2022-07-18T21:15:59 IST" duration-ms="7084">
+  <suite started-at="2022-07-24T21:40:55 IST" name="Default suite" finished-at="2022-07-24T21:41:22 IST" duration-ms="26501">
     <groups>
     </groups>
-    <test started-at="2022-07-18T21:15:52 IST" name="Test" finished-at="2022-07-18T21:15:59 IST" duration-ms="7084">
+    <test started-at="2022-07-24T21:40:55 IST" name="Default test" finished-at="2022-07-24T21:41:22 IST" duration-ms="26501">
       <class name="TestCases.LoginTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:TestCases.LoginTest@6aeb35e6]" started-at="2022-07-18T21:15:52 IST" name="loadConfig" finished-at="2022-07-18T21:15:52 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:40:55 IST" name="loadConfig" finished-at="2022-07-24T21:40:55 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="firstcall()[pri:0, instance:TestCases.LoginTest@6aeb35e6]" started-at="2022-07-18T21:15:52 IST" name="firstcall" finished-at="2022-07-18T21:15:59 IST" duration-ms="6514" status="PASS">
+        <test-method is-config="true" signature="firstcall()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:40:55 IST" name="firstcall" finished-at="2022-07-24T21:41:01 IST" duration-ms="5065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstcall -->
-        <test-method signature="LoginTest()[pri:-1, instance:TestCases.LoginTest@6aeb35e6]" started-at="2022-07-18T21:15:59 IST" name="LoginTest" finished-at="2022-07-18T21:15:59 IST" duration-ms="528" status="PASS">
+        <test-method signature="LoginTest()[pri:-1, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:01 IST" name="LoginTest" finished-at="2022-07-24T21:41:03 IST" duration-ms="2394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="EndGame()[pri:0, instance:TestCases.LoginTest@6aeb35e6]" started-at="2022-07-18T21:15:59 IST" name="EndGame" finished-at="2022-07-18T21:16:00 IST" duration-ms="451" status="PASS">
+        <test-method is-config="true" signature="endBrowser()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:03 IST" name="endBrowser" finished-at="2022-07-24T21:41:03 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endBrowser -->
+        <test-method is-config="true" signature="firstcall()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:03 IST" name="firstcall" finished-at="2022-07-24T21:41:07 IST" duration-ms="3902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstcall -->
+        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:2, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:07 IST" name="InvalidLogin" data-provider="getlogin" finished-at="2022-07-24T21:41:12 IST" duration-ms="5499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[carolwrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1q2w3e4r]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="endBrowser()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:12 IST" name="endBrowser" finished-at="2022-07-24T21:41:13 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endBrowser -->
+        <test-method is-config="true" signature="firstcall()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:13 IST" name="firstcall" finished-at="2022-07-24T21:41:16 IST" duration-ms="3865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstcall -->
+        <test-method signature="InvalidLogin(java.lang.String,java.lang.String)[pri:2, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:16 IST" name="InvalidLogin" data-provider="getlogin" finished-at="2022-07-24T21:41:22 IST" duration-ms="5496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[carol]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1q2w3e4rwrong]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="endBrowser()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:22 IST" name="endBrowser" finished-at="2022-07-24T21:41:22 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endBrowser -->
+        <test-method is-config="true" signature="EndGame()[pri:0, instance:TestCases.LoginTest@34a3d150]" started-at="2022-07-24T21:41:22 IST" name="EndGame" finished-at="2022-07-24T21:41:22 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndGame -->
       </class> <!-- TestCases.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -43,11 +43,10 @@ public class LocatorsforObsqura {
 		  
 		  
 		  
-		  
 			/*
 			 * driver.findElement(By.partialLinkText("Select Input")).click();
-			 * Thread.sleep(3000); //Static drop down(select class object) WebElement st =
-			 * driver.findElement(By.id("single-input-field"));//taking the address of
+			 * Thread.sleep(3000); // Static drop down(select class object) WebElement st =
+			 * driver.findElement(By.id("single-input-field"));// taking the address of
 			 * st.click(); Select dropdown = new Select(st); dropdown.selectByValue("Red");
 			 * Thread.sleep(2000); driver.findElement(By.id("message-one")).click();
 			 * Thread.sleep(2000); dropdown.selectByVisibleText("Green");

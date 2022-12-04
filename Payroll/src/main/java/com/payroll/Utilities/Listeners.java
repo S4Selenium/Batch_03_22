@@ -38,21 +38,21 @@ public class Listeners extends ExtentReport  implements ITestListener {
 			test.log(Status.FAIL,
 					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 		}
-			/*try {
+			try {
 				test.log(Status.FAIL,
 						MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 				test.log(Status.FAIL,
 						MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
-				//String imgPath = action.screenShot(baseclass.getDriver(), result.getName());
+				String imgPath = action.screenShot(BaseClass.getDriver(), result.getName());
 			
-	//			test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
+			test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
 				
-	//		} catch (IOException e) {
+			} catch (IOException e) {
 				// TODO Auto-generated catch block
 			//e.printStackTrace();
-	//		}
-		}*/
-	}
+			}
+		}
+	
 
 	public void onTestSkipped(ITestResult result) {
 		if (result.getStatus() == ITestResult.SKIP) {

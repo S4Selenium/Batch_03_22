@@ -12,14 +12,20 @@ public class HomePage extends BaseClass {
 	
 	public static WebDriver driver;	
 	
-	@FindBy(id = "loginform-username")
-	WebElement username;
+	
+	@FindBy(xpath = "//a[normalize-space()='Dashboard']")
+	WebElement DashBoard;
 
-	@FindBy(xpath = "//input[@placeholder='Password']")
-	WebElement password;
+	@FindBy(xpath = "//a[normalize-space()='Company']")
+	WebElement company;
+	
+	@FindBy(xpath = "//a[@href='/payrollapp/client/index']")
+	WebElement Client;
 
-	@FindBy(xpath = "//button[text()='Login']")
-	WebElement loginbutton;
+	@FindBy(xpath = "//a[normalize-space()='Workers']")
+	WebElement worker;
+	
+	
 	
 	public HomePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -27,25 +33,27 @@ public class HomePage extends BaseClass {
 		PageFactory.initElements(driver,this);
 	}
 	
-	public WebElement username() {
-		return username;
+	public WebElement Dashboard() {
+		return DashBoard;
 	}
 
-	public WebElement password()
+	public WebElement company()
 
 	{
-		return password;
+		act.explicitWait(driver,company, 10);
+		return company;
+		
 	}
 
-	public WebElement loginbutton() {
-		return loginbutton;
+	public WebElement worker() {
+		return worker;
 	}
 	
 	public Client ClientsTab()
 	{
 	    
 		Action act = new Action();
-		act.click(driver, username);
+		act.click(driver, Client);
 		return new Client(driver);
 	}
 	

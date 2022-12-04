@@ -144,7 +144,8 @@ public class Action extends BaseClass  {
 		}
 		return flag;
 	}
-
+	
+//GET_TEXT
 	
 	public boolean selectBySendkeys(String value,WebElement ele) {
 		boolean flag = false;
